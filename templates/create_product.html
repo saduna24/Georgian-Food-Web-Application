@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="card p-4 shadow-sm" style="width: 100%; max-width: 500px; border-radius: 12px; background: rgba(255, 255, 255, 0.9);">
+        
+        <h3 class="text-center mb-4" style="font-family: 'DM Constitution', sans-serif;">კერძის დამატება</h3>
+
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label text-muted small">კერძის დასახელება</label>
+                <input type="text" name="name" class="form-control" placeholder="მაგ. ხაჭაპური" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-muted small">სურათის ლინკი (URL)</label>
+                <input type="text" name="image" class="form-control" placeholder="https://example.com" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-muted small">აღწერა</label>
+                <textarea name="description" class="form-control" rows="3" placeholder="კერძის მოკლე აღწერა..."></textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label text-muted small">ფასი (₾)</label>
+                <input type="number" step="0.01" name="price" class="form-control" placeholder="0.00" required>
+            </div>
+
+            <button class="btn btn-success w-100 py-2">შენახვა</button>
+        </form>
+        
+        <div class="text-center mt-3">
+            <a href="/" class="text-muted small">უკან დაბრუნება</a>
+        </div>
+        
+    </div>
+</div>
+{% endblock %}

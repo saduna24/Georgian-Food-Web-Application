@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'DM Constitution';
+  src: url('./DM-Constitution.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  margin: 0;
+  font-family: 'DM Constitution', sans-serif;
+}
+.title {
+  font-size: 80px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://cdn.dribbble.com/userupload/42217882/file/original-66e6d18ff7530b2b36a2bcf3c3728dbe.jpg?resize=400x300");
+  background-repeat: repeat;
+  background-size: auto;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.custom-navbar {
+  background: #000000;
+}
+
+.logo {
+  width: 196px;
+  height: 150px;
+  border-radius: 20%;
+  opacity: 0.69;
+  margin-left: -50px;
+}
+
+.food-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  position: relative;
+}
+
+.food-img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  bottom: 17px;
+  right: 15px;
+}
+
+.price {
+  color: rgb(71, 63, 63);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  padding: 8px 16px;
+  background-color: rgba(45, 38, 38, 0.055);
+  border-radius: 20px;
+  border: 1px solid rgba(48, 44, 44, 0.15);
+}
+
+.btn-add {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #000000;
+  color: white;
+  border: none;
+  padding: 8px 10px;
+  border-radius: 15px;
+  font-family: 'DM Constitution', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
